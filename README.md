@@ -20,7 +20,15 @@ The core of making API requests is the **client.messages.create()** function. Th
 - max_tokens - A safety limit on response length (not a target)
 - messages - The conversation history you're sending to Claude
 
-Understanding messages
+##### Understanding messages
 
 - User messages - Content you want to send to Claude (written by humans)
 - Assistant messages - Responses that Claude has generated
+
+###### Stateless conversation
+
+Claude does not remember previous messages in a conversation. Each message is treated as a new conversation.
+
+Multi-Turn conversations:
+
+- Add the assistant message to the user message and convert it to to a loop conversation

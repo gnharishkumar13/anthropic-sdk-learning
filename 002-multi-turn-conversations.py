@@ -81,7 +81,7 @@ print("-------final_answer--------------")
 print(final_answer)
 
 
-# convert it to loop using while loop
+# convert it to chat using while loop
 while True:
     user_input = input("You: ")
     if user_input.lower() in ["exit", "quit"]:
